@@ -6,7 +6,7 @@ class Vector2D {
     public Vector2D(int dx, int dy) {
         this.dx = dx;
         this.dy = dy;
-    }
+    }   
 
     void flipDirection() {
         dx = -dx;

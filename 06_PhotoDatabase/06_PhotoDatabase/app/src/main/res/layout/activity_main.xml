@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="←"
+            android:onClick="onPrev"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="25dp">
+        </Space>
+
+        <TextView
+            android:id="@+id/indexText"
+            android:text="0 / 0"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="25dp">
+        </Space>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="→"
+            android:onClick="onNext"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"/>
+
+    <Space
+        android:layout_width="10dp"
+        android:layout_height="25dp">
+    </Space>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Tag" />
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="25dp">
+        </Space>
+
+        <EditText
+            android:id="@+id/tagEdit"
+            android:layout_width="100dp"
+            android:hint="Enter tag"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Size" />
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="25dp">
+        </Space>
+
+        <EditText
+            android:id="@+id/sizeEdit"
+            android:text=""
+            android:inputType="number"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:text="Clear Filters"
+        android:onClick="onClearFilters"
+        android:layout_gravity="center"/>
+
+    <Space
+        android:layout_width="10dp"
+        android:layout_height="25dp">
+    </Space>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Save"
+            android:onClick="onSave"/>
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="25dp">
+        </Space>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Load"
+            android:onClick="onLoad"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:text="Capture"
+        android:onClick="onCapture"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

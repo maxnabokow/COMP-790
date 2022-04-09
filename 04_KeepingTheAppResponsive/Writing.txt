@@ -1,0 +1,11 @@
+5: Does the Thread-based solution in #3 work anymore? Why or why not?
+
+The Thread-based solution does not work anymore because we cannot access UI toolkit elements from the new threads being created. We do not just get unexpected behavior, the app actually crashed completely, with a fatal exception: "ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views."
+
+--------—---
+
+7: Is there any other alternative solutions that you can think of?
+
+Other alternatives, while keeping the thread-based approach, could be:
+1. Using Activity.runOnUiThread(Runnable)
+2. Using View.post(Runnable)
